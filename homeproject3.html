@@ -33,140 +33,118 @@
 </head>
 
 <body>
-    <table align="center" border="3px" style="border-color: rgb(0, 0, 0);">
-        <thead>
-            <tr>
-                <th width="400" style="background-color: rgb(83, 177, 128)" colspan="2">Müraciət et</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td style="height: 50px;" class="bold">Şəkil yükləyin</td>
-                <td>
-                    <form>
+    <form>
+        <table align="center" border="3px" style="border-color: rgb(0, 0, 0);">
+            <thead>
+                <tr>
+                    <th width="400" style="background-color: rgb(83, 177, 128)" colspan="2">Müraciət et</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="height: 50px;" class="bold">Şəkil yükləyin</td>
+                    <td>
                         <label for="myfile"></label>
                         <input type="file" id="myfile" name="myfile">
-                    </form>
-                </td>
-            </tr>
-            <tr>
-                <td class="bold">Ad</td>
-                <td>
-                    <form>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="bold">Ad</td>
+                    <td>
                         <label for="name"></label>
                         <input type="text" id="name" name="name" placeholder="Ad">
-                    </form>
-                </td>
-            </tr>
-            <tr>
-                <td class="bold">Soyad</td>
-                <td>
-                    <form>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="bold">Soyad</td>
+                    <td>
                         <label for="sname"></label>
                         <input type="text" id="sname" name="sname" placeholder="Soyad">
-                    </form>
-                </td>
-            </tr>
-            <tr>
-                <td class="bold">Dogum tarixi</td>
-                <td>
-                    <form>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="bold">Dogum tarixi</td>
+                    <td>
                         <label for="date"></label>
                         <input type="date" id="date" name="date">
-                    </form>
-                </td>
-            </tr>
-            <tr>
-                <td class="bold">Cinsiyyet</td>
-                <td>
-                    <form>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="bold">Cinsiyyet</td>
+                    <td>
                         <label for="male">Kişi</label>
                         <input type="radio" id="male" name="male" value="male">
                         <label for="female">Qadin</label>
                         <input type="radio" id="female" name="female" value="female">
-                    </form>
-                </td>
-            </tr>
-            <tr>
-                <td class="bold">Email</td>
-                <td>
-                    <form>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="bold">Email</td>
+                    <td>
                         <label for="email"></label>
                         <input type="email" id="email" name="email" placeholder="Emailinizi yazin">
-                    </form>
-                </td>
-            </tr>
-            <tr>
-                <td style="height: 60px;" class="bold" rowspan="2">Əlaqə</td>
-                <td>
-                    <form>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 60px;" class="bold" rowspan="2">Əlaqə</td>
+                    <td>
                         <label for="tel"><strong>tel:</strong></label>
                         <input type="tel" id="tel1" name="tel" placeholder="phone">
-                    </form>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
                         <label for="tel"><strong>tel:</strong></label>
                         <input type="tel" id="tel2" name="tel" placeholder="phone">
-                    </form>
-                </td>
-            </tr>
-            <tr>
-                <td style="height: 55px;" class="bold">Təcrübələriniz</td>
-                <td>
-                    <form>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 55px;" class="bold">Təcrübələriniz</td>
+                    <td>
                         <label for="message"></label>
                         <textarea type="message" id="message" name="message" col="60" row="30"
                             placeholder="Təcrübələrinizi qeyd edin..."></textarea>
-                    </form>
-                </td>
-            </tr>
-            <tr>
-                <td class="bold">Xarici Dillər</td>
-                <td>
-                    <form>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="bold">Xarici Dillər</td>
+                    <td>
                         <label for="english">İngilis dili</label>
                         <input type="radio" id="english" name="english" value="english">
                         <label for="turkish">Türk dili</label>
                         <input type="radio" id="turkish" name="turkish" value="turkish">
                         <label for="russian">Rus dili</label>
                         <input type="radio" id="russian" name="russian" value="russian">
-                    </form>
-                </td>
-            </tr>
-            <tr>
-                <td class="bold">Əsgərlik</td>
-                <td>
-                    <form>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="bold">Əsgərlik</td>
+                    <td>
                         <select name="military" id="military">
                             <option value="yesmil">Xidmətdə olub</option>
                             <option value="nomil">Xidmətdə olmayib</option>
                         </select>
-                    </form>
-                </td>
-            </tr>
-            <tr>
-                <td class="bold">Təhsil</td>
-                <td>
-                    <form>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="bold">Təhsil</td>
+                    <td>
                         <select name="school" id="school">
                             <option value="middlesch">Orta Təhsil</option>
                             <option value="degree">Üniversitet</option>
                         </select>
-                    </form>
-                </td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td colspan="2" align="center" style="background-color: rgb(83, 177, 128);height: 30px; ">
-                    <button>Təstiq et</button>
-                </td>
-            </tr>
-        </tfoot>
-    </table>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2" align="center" style="background-color: rgb(83, 177, 128);height: 30px; ">
+                        <button>Təstiq et</button>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </form>
     <hr style="height: 1px;background-color: aquamarine;">
     <hr style="height: 1px;background-color: aquamarine;">
     <center>
