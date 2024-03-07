@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-repeat: no-repeat;
+    height: 50vh;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.photo {
+    background-image: url(./futbol.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    overflow-y: hidden;
+}
+
+header {
+    background-color: red;
+}
+
+.container {
+    width: 1440px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.panel {
+    display: flex;
+    padding: 10px 5px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: end;
+}
+
+.logo img {
+    width: 40px;
+    height: 50px;
+}
+
+
+.panel ul {
+    display: flex;
+    ;
+    align-items: center;
+    gap: 40px;
+}
+
+.panel a {
+    color: white;
+}
+
+h1 {
+    display: flex;
+    font-size: 70px;
+    color: rgb(184, 122, 9);
+    text-shadow: 4px 6px 10px rgba(18, 76, 164, 0.6);
+    justify-content: center;
+    padding: 50px;
+    margin: 10px auto;
+}
+
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    
+    gap: 10px;
+}
+
+.product {
+    width: 22%;
+    text-align: center;
+    box-shadow: -1px 3px 8px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -1px 3px 8px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 3px 8px 0px rgba(0, 0, 0, 0.75);
+}
+
+.product__bg__color {
+    background-color: aqua;
+}
+
+.product img {
+    width: 100%;
+    object-fit: cover;
+}
+
+h3 {
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 4px -5px 10px rgba(231,23,23,0.6);
+}
+
+.buy {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+
+#random {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    max-width: 400px;
+    padding-bottom: 60px;
+}
+
+.buy button {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+button :hover {
+    background-color: black;
+    color: red;
+}
