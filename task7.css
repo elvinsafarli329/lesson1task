@@ -16,7 +16,10 @@
 
 header{
     background-color: brown;
-
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    position: relative;
 }
 
 .nav_bar {
@@ -54,6 +57,9 @@ header{
     width: 100%;
     height: 100vh;
 }
+
+
+
 
 h1 {
     font-family: "Oleo Script", system-ui;
@@ -172,6 +178,7 @@ i {
     display: flex;
     justify-content: space-around;
     align-items: center;
+
 }
 
 .information p {
@@ -179,15 +186,19 @@ i {
     background-color: white;
     max-width: 500px;
     font-family: "Oleo Script", system-ui;
+    position: relative;
 }
 
-h2 {
+span {
+    background-repeat: no-repeat;
+    font-size: 40px;
     font-weight: bold;
     font-family: "Oleo Script", system-ui;
 }
 
-.information img {
+#bottomphoto {
     margin: 70px 0 50px 0;
     width: 500px;
     height: 400px;
 }
+
