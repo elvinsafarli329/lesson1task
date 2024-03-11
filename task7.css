@@ -18,8 +18,8 @@ header{
     background-color: brown;
     position: sticky;
     top: 0;
+    right: 0;
     z-index: 1;
-    position: relative;
 }
 
 .nav_bar {
