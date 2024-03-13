@@ -134,10 +134,15 @@ a {
 }
 
 .photos {
-    position: relative;
+    display: flex;
+    height: 400px;
+    width: 800px;
+    max-width: 600px;
+    flex-wrap: wrap;
 }
 
-.photos img {
+.photo {
+    background-image: url("./alien1.jpg");
     width: 200px;
     height: 250px;
    background-size: cover;
@@ -146,10 +151,9 @@ a {
    box-shadow: -2px -1px 81px -33px rgba(244,244,244,0.75); 
    transition: 0.5s;
    z-index: 1;
+   position: relative;
 }
-
-
-.photos img::before {
+.photo::before {
     content: "";
     position: absolute;
     top: 0;
@@ -158,7 +162,13 @@ a {
     z-index: -1;
 }
 
-.photos img:hover {
+.photo:hover {
     transform: scale(1.1);
     box-shadow: 2px 3px 51px 9px rgba(143,154,246,0.75);
-} 
+}
+
+.photo p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
