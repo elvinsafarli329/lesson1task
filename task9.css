@@ -43,7 +43,7 @@
 
 .van {
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 400px;
     background-size: cover;
     animation-name: move;
