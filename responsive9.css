@@ -1,0 +1,11 @@
+@media screen and (max-width: 500px) {
+    .icons{
+        display: none;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+
+}
