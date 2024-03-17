@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+    /* border: 1px solid red; */
+}
+
+.navbar {
+    margin: 60px 0;
+}
+
+.container {
+    width: 1440px;
+    max-width: 90%;
+    margin: auto;
+}
+
+.panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navlogo img {
+    width: 180px;
+}
+
+.icon {
+    font-size: 30px;
+}
+
+.page2 {
+    position: relative;
+}
+
+.headphoto {
+    background-image: url("./background10.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 120vh;
+    width: 100%;
+}
+
+.headphoto p {
+    font-size: 80px;
+    color: white;
+    text-align: center;
+    transform: translateY(250px);
+}
+
+.eicon {
+    position: absolute;
+    bottom: 0;
+    right: calc(100%/2);
+    font-size: 100px;
+    transition: 0.3s ease;
+    opacity: 0;
+}
+
+.eicon:hover {
+    opacity: 1;
+}
+
+.welcome {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.welcome h1 {
+    font-size: 30px;
+} 
+
+.welcome p {
+    width: 450px;
+    font-size: 17px;
+}
+
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+} 
+
+.container2 p {
+    font-size: 20px;
+}
+.logos {
+    margin-top: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 1000px;
+    height: 600px; 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+.logos img:nth-of-type(1) {
+    width: 600px;
+    height: 300px;
+    margin-right: 20px;
+}
+
+.logos img:nth-of-type(2) {
+     width: 300px;
+    height: 300px; 
+}
+
+.logos img:nth-of-type(3) {
+    width: 300px;
+    height: 300px;
+}
+
+.logos img:nth-of-type(4) {
+    width: 200px;
+    height: 300px;
+}
+
+.logos img:nth-of-type(5) {
+    width: 400px;
+    height: 300px;
+}
+
+.undergrid {
+    padding: 40px;
+    transform: translateX();
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    opacity: 1;
+    transition: 0.3s ease;
+}
+
+.undergrid:hover {
+    opacity: 0.5;
+}
+
+.grid2 {
+    gap: 10px;
+    background-color: black;
+}
+
+.griditems2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    padding: 90px;
+}
+
+.griditems2 p {
+    width: 550px;
+    font-size: 20px;
+}
+
+.griditems2 h5 {
+    font-size: 30px;
+}
+
+.clients {
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.entry h3 {
+    font-size: 30px;
+}
+
+.info p {
+    width: 500px;
+}
+
+.partners {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;   
+    padding: 0;
+    gap: 20px;
+}
+
+
+.image-container {
+    position: relative;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px; 
+    color: black; 
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.partners .image-container:hover .overlay-text {
+    opacity: 1;
+}
+
+.partners img {
+    box-shadow: 1px -1px 5px 1px rgba(0, 0, 0, 0.75);
+    padding: 0;
+    width: 250px;
+    height: 250px;
+    opacity: 1;
+    transition: 0.5s ease;
+}
+
+.partners img:hover {
+    opacity: 0.1;
+} 
+
+footer {
+    background-color: gray;
+}
+
+.footerdata {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.entry {
+    margin: 50px 0;
+}
+
+.news {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.news img {
+    width: 200px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 1s;
+    opacity: 1;
+}
+
+.news img:hover {
+    opacity: 0.3;
+}
+
+.news p {
+    width: 500px;
+}
+
+footer .undergrid {
+    font-size: 40px;
+}
+
+.last .panel {
+    margin: 20px 0;
+}
+
+.last .panel p, ul {
+    font-size: 20px;
+}
+
+.last .panel i {
+    transition: 0.3s;
+    font-size: 30px;
+}
+
+.last .panel i:hover{
+    transform: scale(1.5);
+}
+
+ul {
+    display: flex;
+    gap: 30px;
+}
+
+ul li {
+    position: relative;
+    z-index: 1;
+}
+
+ul li::before {
+    content: "";
+    background-color: blue;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0; 
+    transform-origin: bottom left;
+    transition: width 0.5s ease; 
+}
+
+ul li:hover {
+    color: blue;
+}
+
+ul li:hover::before {
+    width: 100%;
+    transform: scaleX(1); 
+}
