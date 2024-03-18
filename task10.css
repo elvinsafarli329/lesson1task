@@ -72,7 +72,7 @@
 
 .welcome h1 {
     font-size: 30px;
-} 
+}
 
 .welcome p {
     width: 450px;
@@ -86,46 +86,77 @@
     justify-content: center;
     align-items: center;
     margin: auto;
-} 
+}
 
 .container2 p {
     font-size: 20px;
 }
+
 .logos {
     margin-top: 20px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 1000px;
-    height: 600px; 
+    height: 600px;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
 
+.logo1 {
+    position: relative;
+}
 
-.logos img:nth-of-type(1) {
+.logo1 img {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.overlay-text1 {
+    position: absolute;
+    bottom: 0;
+    left: 70px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+    font-size: 24px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.logo1:hover .overlay-text1 {
+    opacity: 1;
+}
+
+.logo1 img:hover {
+    opacity: 0.2;
+}
+
+.logogrid1 {
     width: 600px;
     height: 300px;
     margin-right: 20px;
 }
 
-.logos img:nth-of-type(2) {
-     width: 300px;
-    height: 300px; 
-}
-
-.logos img:nth-of-type(3) {
+.logogrid2 {
     width: 300px;
     height: 300px;
 }
 
-.logos img:nth-of-type(4) {
+.logogrid3 {
+    width: 300px;
+    height: 300px;
+}
+
+.logogrid4 {
     width: 200px;
     height: 300px;
 }
 
-.logos img:nth-of-type(5) {
+.logogrid5 {
     width: 400px;
     height: 300px;
 }
@@ -189,7 +220,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;   
+    flex-wrap: wrap;
     padding: 0;
     gap: 20px;
 }
@@ -204,8 +235,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 24px; 
-    color: black; 
+    font-size: 24px;
+    color: black;
     opacity: 0;
     transition: opacity 0.5s ease;
 }
@@ -225,7 +256,7 @@
 
 .partners img:hover {
     opacity: 0.1;
-} 
+}
 
 footer {
     background-color: gray;
@@ -275,7 +306,8 @@ footer .undergrid {
     margin: 20px 0;
 }
 
-.last .panel p, ul {
+.last .panel p,
+ul {
     font-size: 20px;
 }
 
@@ -284,7 +316,7 @@ footer .undergrid {
     font-size: 30px;
 }
 
-.last .panel i:hover{
+.last .panel i:hover {
     transform: scale(1.5);
 }
 
@@ -305,9 +337,9 @@ ul li::before {
     bottom: 0;
     left: 0;
     height: 2px;
-    width: 0; 
+    width: 0;
     transform-origin: bottom left;
-    transition: width 0.5s ease; 
+    transition: width 0.5s ease;
 }
 
 ul li:hover {
@@ -316,5 +348,5 @@ ul li:hover {
 
 ul li:hover::before {
     width: 100%;
-    transform: scaleX(1); 
+    transform: scaleX(1);
 }
