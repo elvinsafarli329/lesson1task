@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1600px;
+    max-width: 90%;
+    margin: auto;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+}
+
+header {
+    background-image: url("https://d3f86pfw66amx.cloudfront.net/uncode/wp-content/uploads/2022/07/fabio-alves-HNaC2lbnK_0-unsplash-uai-1400x622.jpg");
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.text {
+    transform: translate(50px, 100px);
+}
+
+.text span {
+    display: inline-block;
+     font-size: 20px; 
+     margin-bottom: 20px;
+}
+
+.text p {
+    color: white;
+    font-size: 40px;
+}
+
+button {
+    border: 1px solid white;
+    color: white;
+    margin-top: 30px;
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 10px;
+    transition: .5s ease;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
