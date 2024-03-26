@@ -3,30 +3,29 @@
 // console.log(name.length);
 
 //task2
-// let word = prompt("Write a sentence: ");
-// let firstWord = word.split(" ")[0];
-// console.log(firstWord.indexOf(firstWord.charAt(1)) !== -1);
+// let word= prompt("Write a word: ");
+// let simvol = prompt("write simvol: ");
+// console.log(word.includes(simvol));
 
 //task3
-// let word= prompt("Write a sentence: ");
-// let firstWord = word.split(" ")[0];
-// console.log(firstWord.startsWith(firstWord.charAt(1)));
+// let word= prompt("Write a word: ");
+// let simvol = prompt("write simvol: ");
+// console.log(word.startsWith(simvol));
 
 //task4
-// let word= prompt("Write a sentence: ");
-// let firstWord = word.split(" ")[0];
-// console.log(firstWord.endsWith(firstWord.charAt(1)));
+// let word= prompt("Write a word: ");
+// let simvol = prompt("write simvol: ");
+// console.log(word.endsWith(simvol));
 
 //task5
-// let word = prompt("Write a word: ");
-// let firstWord = sentence.split(" ")[0];
-// console.log(firstWord[1]);
+// let word= prompt("Write a word: ");
+// let simvol = prompt("write simvol: ");
+// console.log(word.indexOf(simvol));
 
 //task6
 // let word= prompt("Write a word: ");
-// if (word === word.toUpperCase()) {
-//     console.log("true");
-// }
-// else {
-//     console.log("false");
-// }
+// console.log(word.includes(word.toUpperCase()));
+
+
+
+
