@@ -1,12 +1,7 @@
-const getMovies = async () => {
-    const titles = [];
-    let page = 1;
-    while (page <= 1) {
-        let res = await fetch(`https://www.omdbapi.com/?apikey=5fcfcc1f&s=Batman&page=${page}`);
-        let data = await res.json();
-        data.Search.forEach((movie) => titles.push(movie.Title));
-        page++;
-    }
-    titles.forEach(title => console.log(title));
-    };
-    getMovies();
+fetch(`https://api.themoviedb.org/3/movie/popular?api_key=17c558ac65413581dd1796acf0fd0f6a`)
+    .then((res) => res.json())
+    .then((data) => {
+        data.results.map(movie => {
+            console.log(movie.title);
+        });
+    })
