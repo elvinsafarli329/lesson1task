@@ -5,31 +5,31 @@ const leftBtn = document.getElementById("left");
 let Index = 0;
 let images = [];
 
-function showSlide(index) {
+function viewslide(index) {
     slide.innerHTML = "";
     const img = document.createElement("img");
     img.src = images[index];
     slide.appendChild(img);
 }
 
-function nextSlide() {
+function nextphoto() {
     Index = (Index + 1) % images.length;
-    showSlide(Index);
+    viewslide(Index);
 }
 
-function prevSlide() {
+function prevphoto() {
     Index = (Index - 1 + images.length) % images.length;
-    showSlide(Index);
+    viewslide(Index);
 }
 
-rightBtn.addEventListener("click", nextSlide);
-leftBtn.addEventListener("click", prevSlide);
+rightBtn.addEventListener("click", nextphoto);
+leftBtn.addEventListener("click", prevphoto);
 
 fetch('https://fakestoreapi.com/products')
     .then(res => res.json())
     .then(apiimages => {
         images = apiimages.map(a => a.image);
-        showSlide(Index);
+        viewslide(Index);
     });
 
 document.body.appendChild(slide);
