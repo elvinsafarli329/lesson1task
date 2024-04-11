@@ -36,7 +36,10 @@ btn.addEventListener("click", () => {
         age.style.backgroundColor = "white";
         age.style.pointerEvents = "none";
 
-    })
+        buttons1.textContent = "duzelis et";
+        buttons1.style.backgroundColor = "yellow";
+        
+    });
     const buttons2 = document.createElement("button");
     buttons2.textContent = "Sil";
 
