@@ -45,15 +45,14 @@ btn.addEventListener("click", () => {
     const surnamelabel = document.createElement("label");
     const agelabel = document.createElement("label");
 
-
     sira.append(siralabel);
     nametd.append(name, namelabel);
     surnametd.append(surname, surnamelabel);
     agetd.append(age, agelabel);
-    buttonstd1.append(buttons1)
-    buttonstd2.append(buttons2)
+    buttonstd1.append(buttons1);
+    buttonstd2.append(buttons2);
 
-    tr.append(sira, nametd, surnametd, agetd, buttons1, buttons2)
+    tr.append(sira, nametd, surnametd, agetd, buttons1, buttons2);
 
-    tbody.appendChild(tr)
+    tbody.appendChild(tr);
 })
