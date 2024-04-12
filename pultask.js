@@ -1,8 +1,8 @@
-const pullar = [500, 200, 100, 50, 20, 10, 5, 1];
+const pullar = [1000, 500, 200, 100, 50, 20, 10, 5, 1];
 const form = document.getElementById("form");
 const input = document.getElementById("input");
 const section = document.getElementById("section");
-const photos = ['500.jpg', '200.jpg', '100.jpg', '50.jpg', '20.jpg', '10.jpg', '5.jpg', '1.jpg'];
+const photos = ['1000.jpg', '500.jpg', '200.jpg', '100.jpg', '50.jpg', '20.jpg', '10.jpg', '5.jpg', '1.jpg'];
 
 form.addEventListener("click", (e) => {
     e.preventDefault();
