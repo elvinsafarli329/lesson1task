@@ -1,51 +1,64 @@
 const addBtn = document.querySelector(".addBtn");
 const tbody = document.querySelector("tbody");
 let allow = true;
+let storeddata = {};
 
 const orderRow = () => {
   const rows = [...document.querySelectorAll("tbody tr")];
-  rows.map((row, key) => {
-    [(row.querySelector("td").textContent = key + 1)];
+  rows.forEach((row, i) => {
+    row.querySelector("td").textContent = i + 1;
   });
 };
 
 const saveData = (e) => {
-  const inputs = [...document.querySelectorAll("input")];
-  inputs.map((input) => {
+  const row = e.target.closest("tr");
+  const inputs = row.querySelectorAll("input");
+  inputs.forEach((input, i) => {
+    storeddata[i] = input.value;
     input.parentElement.textContent = input.value;
   });
+
   e.target.textContent = "Düzəliş et";
   e.target.removeEventListener("click", saveData);
   e.target.addEventListener("click", EditData);
 
-  e.target.nextElementSibling.textContent = "sil"
-  e.target.removeEventListener("click", cancelData);
-  e.target.addEventListener("click", removeData);
+  const cancelBtn = e.target.nextElementSibling;
+  cancelBtn.textContent = "sil";
+  cancelBtn.removeEventListener("click", cancelData);
+  cancelBtn.addEventListener("click", removeData);
 
   allow = true;
 };
 
 const EditData = (e) => {
   const row = e.target.closest("tr");
-  const cells = row.querySelectorAll("td");
-  cells.forEach((cell, index) => {
-    if (index !== 0 && index !== cells.length - 1) {
+  const edits = row.querySelectorAll("td");
+  const originalData = new Map(); 
+
+  edits.forEach((box, i) => {
+    if (i !== 0 && i !== edits.length - 1) {
+      const inputValue = box.textContent.trim();
+      originalData.set(i, inputValue); 
       const input = document.createElement("input");
       input.type = "text";
-      input.value = cell.textContent;
-      cell.textContent = "";
-      cell.appendChild(input);
+      input.value = inputValue;
+      box.textContent = "";
+      box.appendChild(input);
     }
   });
+
+  row.originalData = originalData;
 
   e.target.textContent = "Yadda saxla";
   e.target.removeEventListener("click", EditData);
   e.target.addEventListener("click", saveData);
 
-  e.target.nextElementSibling.textContent = "levg et"
-  e.target.removeEventListener("click", removeData);
-  e.target.addEventListener("click", cancelData);
+  const cancelBtn = e.target.nextElementSibling;
+  cancelBtn.textContent = "levg et";
+  cancelBtn.removeEventListener("click", removeData);
+  cancelBtn.addEventListener("click", cancelData);
 };
+
 
 const removeData = (e) => {
   const row = e.target.closest("tr");
@@ -55,9 +68,27 @@ const removeData = (e) => {
 };
 
 const cancelData = (e) => {
+  const row = e.target.closest("tr");
+  const cancelled = row.querySelectorAll("td");
+  const originalData = row.originalData;
 
+  cancelled.forEach((box, i) => {
+    if (i !== 0 && i !== cancelled.length - 1) {
+      box.textContent = originalData.get(i); 
+    }
+  });
+
+  e.target.textContent = "sil";
+  e.target.removeEventListener("click", cancelData);
+  e.target.addEventListener("click", removeData);
+
+  const editBtn = e.target.previousElementSibling;
+  editBtn.textContent = "Düzəliş et";
+  editBtn.removeEventListener("click", saveData);
+  editBtn.addEventListener("click", EditData);
+
+  allow = true;
 };
-
 
 addBtn.addEventListener("click", () => {
   if (!allow) {
