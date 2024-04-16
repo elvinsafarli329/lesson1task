@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+    /* border: 1px solid red; */
+}
+
+
+#valyuta {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.savedinput {
+    display: flex;
+    justify-content: center;
+}
+
+#dropdown {
+    margin-left: 10px;
+}
+
+.savedinput{
+    margin-left: 300px;
+}
